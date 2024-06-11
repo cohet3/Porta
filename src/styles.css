@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+/* Ajustes generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Estilo del contenedor principal */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la sección del portafolio */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.portfolio-item {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  padding: 15px;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.portfolio-item p {
+  padding: 0 15px 15px;
+  margin: 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+
+  color: #0a0a0a;
+  padding: 20px 0;
+  width: 80%;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-item {
+    width: 100%;
+  }
+}
