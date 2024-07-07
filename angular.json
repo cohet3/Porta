@@ -99,9 +99,10 @@
           }
         },
         "deploy": {
-          "builder": "@angular/fire:deploy",
+          "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "repo": "https://github.com/cohet3/FrontPorta"
+            "repo": "https://github.com/cohet3/FrontPorta",
+            "baseHref": "https://cohet3.github.io/FrontPorta/"
           }
         }
       }
