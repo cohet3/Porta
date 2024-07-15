@@ -2,6 +2,7 @@
   "routes": [
     "/contact",
     "/home",
+    "/logros",
     "/proyects",
     "/resume"
   ]

@@ -1,0 +1,56 @@
+
+
+#badges {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.badge img {
+    max-width: 100%;
+    height: auto;
+}
+
+.badge p {
+    margin: 10px 0;
+    color: black;
+}
+
+.badge a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0073e6;
+    border: 1px solid #0073e6;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.badge a:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
