@@ -111,3 +111,8 @@ footer a:hover {
     width: 100%;
   }
 }
+.container-max-width {
+  max-width: 1200px; /* Puedes ajustar este valor según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 0 15px; /* Opcional: Añade padding para mantener espacio a los lados en pantallas más pequeñas */
+}

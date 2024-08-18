@@ -1,0 +1,86 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  
+  .slider-item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .slider-container::before,
+  .slider-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .slider-container::before {
+    left: 10px;
+    /* background-image: url('path/to/left-arrow-icon.svg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .slider-container::after {
+    right: 10px;
+    /* background-image: url('path/to/right-arrow-icon.svg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* Indicadores opcionales para mostrar la posición del slider */
+  .slider-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .slider-indicators div {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slider-indicators div.active {
+    opacity: 1;
+  }
+  
